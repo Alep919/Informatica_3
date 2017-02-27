@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prenotazioni</title>
+		<link rel="stylesheet" href="cinemacss.css">
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<script type="text/javascript">
+		var prezzo_interi = 8;
+		var prezzo_ridotti = 5;
+		var totale_int;
+		vat totale_rid;
+		var prezzo;
+		function calcolo(){
+		var n_interi = document.getElementById("intero").value;
+		n_interi=parseInt(n_interi);
+		var n_ridotti = document.getElementById("ridotto").value;
+		n_ridotti=parseInt(n_ridotti);
+		totale_int = prezzo_interi * n_interi;
+		totale_rid = prezzo_ridotti * n_ridotti;
+		prezzo = totale_int + totale_rid;
+		document.getElementById("prezzo").innerHTML = prezzo;
+		alert("L'importo da pagare è di  €" +prezzo);
+		}
+		</script>
+	</head>
+	<body>
+		<div id=pagina>
+			<div id="riga1">
+			<ul  id="menusopra">
+					<li class="menusiti"><a href="homecinema.html" target="_blank">HOME</a></li>
+					<li class="menusiti"><a href="programmazione.html" target="_blank">FILM IN PROGRAMMAZIONE</a></li>
+					<li class="menusiti"><a href="prenotazioni.html" target="_blank">PRENOTAZIONI</a></li>
+					<li class="menusiti"><a href="info.html" target="_blank">INFO</a></li>
+				</ul>
+				<br><br>
+			</div>
+			<div id=riga2>
+			<h1 class="titoli"> PRENOTAZIONI </h1>
+			</div>
+			<div id="rigaprenotazioni">
+				<div id="formsx">
+					<h3 id="acquista">PRENOTA I BIGLIETTI</h3>
+					<p class="pdesc">Riempi tutti i campi e prenota i tuoi biglietti!</p>
+					<form class="prenotazioni">
+						<span id="tabnome">Nome</span>		
+						<input type="text" name="Nome" value="">
+						<br>
+						<span id="tabcognome">Cognome</span>	
+						<input type ="text" name="Cognome" value="">
+						<br>
+						<span id="tabmail">E-Mail</span>
+						<input type ="text" name="mail" value="">
+						<br>
+					</form>
+				</div>
+				<div id="formdx">
+					<form class="prenotazioni">
+						<span id="tabfilm">Seleziona il film che vuoi vedere.</span>
+						<select>
+							<option></option>
+							<option value="hacksaw">La battaglia di Hacksaw Ridge</option>
+							<option value="united">A united kingdom</option>
+							<option value="collateral">Collateral beauty</option>
+							<option value="split">Split</option>
+							<option value="smetto">Smetto quando voglio - Masterclass</option>
+							<option value="resident">Resident evil the final chapter</option>
+							<option value="autobahn">Autobahn Fuori controllo</option>
+							<option value="mop">Mamma o Papà?</option>
+							<option value="ballerina">Ballerina</option>
+							<option value="gimme">Gimme Danger</option>
+							<option value="lego">Lego Batman</option>
+							<option value="wall">The Great Wall</option>
+						</select>
+						<br>
+						<span id="tabgiorno">Seleziona il giorno.</span>
+						<select>
+							<option></option>
+							<option>Mercoledì 15</option>
+							<option>Giovedì 16 </option>
+							<option>Venerdì 17 </option>
+							<option>Sabato 18 </option>
+							<option>Domenica 19 </option>
+							<option>Lunedì 20</option>
+						<select>
+						<br>
+						<span id="tabora">Seleziona l'ora</span>
+						<select>
+							<option></option>
+							<option>14</option>
+							<option>16 </option>
+							<option>18 </option>
+							<option>20 </option>
+							<option>22 </option>
+						<select>
+						<br>
+						<span id="tabintero">Inserire il numero dei biglietti interi</span>
+						<input type="text" id="intero" value=""><br>
+						<span id="tabridotto">Inserire il numero dei biglietti ridotti</span>
+						<input type="text" id="ridotto" value=""><br>
+						<input type="button" id="calcolo_prezzo" value="Acquista" onclick="calcolo()">
+					</form>
+					<p class="pdesc">Il costo totale è di <span id="prezzo">0</span> €</p>
+				</div>
+				<img src="">
+			</div>
+		</div>
+	</body>
+</html>
