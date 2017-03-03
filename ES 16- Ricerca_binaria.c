@@ -13,23 +13,21 @@ int main(){
 	min=0;
 	i=0;
 	trovato=0;
-	while((trovato==0)&&(i==0)){
+	while((trovato==0)&&(min<=max)){
 		medio=(max+min)/2;
 		if(numero==numeri[medio]){
 			trovato=1;
 		}else{
 			if(numero>numeri[medio]){
-				min=medio;
+				min=medio+1;
 			}else{
-				max=medio;
+				max=medio-1;
 			}
 		}
-		if(max==min){
-			i=1;
-		}
+		i++;
 	}
 	if(trovato==1){
-		printf("Il numero %d e' stato trovato all'interno dell'Array \n",numero);
+		printf("Il numero %d e' stato trovato all'interno dell'Array con %d passaggi nella posizione %d \n",numero,i,medio);
 	}else{
 		printf("Il numero %d non e' stato trovato all'interno dell'Array \n",numero);
 	}
