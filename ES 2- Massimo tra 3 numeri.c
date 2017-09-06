@@ -18,7 +18,7 @@ main(){
 	if(N3>MAX){ // Selezione attraverso cui stabilisco quale sia il numero maggiore tra N3 e MAX //
 		MAX=N3;
 	} 
-	printf("\n Il numero maggiore è = %d ", MAX);
+	printf("\n Il numero maggiore Ã¨ = %d ", MAX);
 	system ("PAUSE");
 	
 }
