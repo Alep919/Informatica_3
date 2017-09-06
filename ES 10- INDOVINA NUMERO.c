@@ -24,9 +24,9 @@ int main(){
 		}else{
 			if(diff!=1){
 				if(n>num){
-					printf("\nIl numero che hai inserito è maggiore del numero casuale.");
+					printf("\nIl numero che hai inserito Ã¨ maggiore del numero casuale.");
 				}else{
-					printf("\nIl numero che hai inserito è minore del numero casuale.");
+					printf("\nIl numero che hai inserito Ã¨ minore del numero casuale.");
 				}
 			}
 			try--;
