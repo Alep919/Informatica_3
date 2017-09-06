@@ -31,7 +31,7 @@ main(){
 			i++;
 		}
 		if(x==n){
-			printf("\n Una coppia di numeri amici è %d e %d ",n ,m);
+			printf("\n Una coppia di numeri amici Ã¨ %d e %d ",n ,m);
 			y++;
 		}
 		n++;	
