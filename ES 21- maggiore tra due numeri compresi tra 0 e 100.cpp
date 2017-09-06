@@ -11,9 +11,9 @@ int main(){
 		scanf("%d",&n2);
 	}while(n2<0 || n2>100);
 	if(n1>n2){
-		printf("\nIl maggiore è %d",n1);
+		printf("\nIl maggiore Ã¨ %d",n1);
 	}else{
-		printf("\nIl maggiore è %d",n2);
+		printf("\nIl maggiore Ã¨ %d",n2);
 	}
 	getchar();
 	getchar();
